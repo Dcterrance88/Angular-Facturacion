@@ -1,0 +1,15 @@
+<h2 class="text-center mb-5">Bill System</h2>
+<ul class="list-group">
+
+  <h4 class="ms-3">Customers</h4>
+  <hr>
+
+  <li *ngFor="let item of customerMenu"
+      class="list-group-item"
+      [routerLink]="[item.path]"
+      routerLinkActive="active">
+
+    {{item.text}}
+  </li>
+
+</ul>
